@@ -1,0 +1,45 @@
+.col-page { min-height:100vh; background:#f5f6fa; }
+.col-wrap { max-width:1100px; margin:0 auto; padding:36px 24px 60px; }
+
+.col-page-header { display:flex; align-items:center; gap:16px; margin-bottom:32px; }
+.col-page-icon { width:52px; height:52px; background:#fce4ec; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px; flex-shrink:0; }
+.col-page-header h2 { font-size:22px; font-weight:700; color:#1a1a2e; margin:0 0 4px; }
+.col-page-header p { font-size:14px; color:#6b7280; margin:0; }
+
+.col-tabs { display:flex; gap:8px; margin-bottom:24px; border-bottom:2px solid #e5e7eb; padding-bottom:0; }
+.col-tab { padding:10px 20px; font-size:15px; font-weight:600; border:none; background:none; cursor:pointer; color:#9ca3af; border-bottom:2px solid transparent; margin-bottom:-2px; transition:all 0.15s; display:flex; align-items:center; gap:8px; }
+.col-tab.active { color:#e53935; border-bottom-color:#e53935; }
+.tab-count { background:#f3f4f6; color:#6b7280; font-size:12px; padding:2px 8px; border-radius:20px; font-weight:600; }
+.col-tab.active .tab-count { background:#fde8e8; color:#e53935; }
+
+.col-loading { text-align:center; padding:60px; color:#9ca3af; font-size:16px; }
+
+.col-empty { text-align:center; padding:80px 24px; }
+.empty-icon { font-size:60px; margin-bottom:16px; }
+.col-empty p { font-size:16px; color:#9ca3af; margin-bottom:20px; }
+.go-btn { padding:10px 24px; background:#e53935; color:#fff; border:none; border-radius:10px; font-size:14px; font-weight:700; cursor:pointer; transition:background 0.15s; }
+.go-btn:hover { background:#c62828; }
+
+/* Pokemon grid */
+.poke-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(130px,1fr)); gap:12px; }
+.col-poke-card { position:relative; background:#fff; border-radius:14px; border:1px solid #e5e7eb; padding:12px; text-align:center; cursor:pointer; transition:transform 0.18s, box-shadow 0.18s; }
+.col-poke-card:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,0.09); }
+.col-poke-img { height:80px; display:flex; align-items:center; justify-content:center; }
+.col-poke-img img { width:72px; height:72px; object-fit:contain; }
+.col-poke-info { display:flex; flex-direction:column; margin-top:6px; }
+.col-poke-num { font-size:11px; color:#9ca3af; }
+.col-poke-name { font-size:13px; font-weight:700; color:#1a1a2e; }
+
+/* Card grid */
+.card-col-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px,1fr)); gap:14px; }
+.col-tcg-card { position:relative; background:#fff; border-radius:14px; border:1px solid #e5e7eb; padding:14px; text-align:center; cursor:pointer; transition:transform 0.18s, box-shadow 0.18s; }
+.col-tcg-card:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,0.09); }
+.col-tcg-img { height:100px; display:flex; align-items:center; justify-content:center; }
+.col-tcg-img img { width:80px; height:90px; object-fit:contain; }
+.col-tcg-info { margin-top:8px; }
+.col-tcg-name { display:block; font-size:13px; font-weight:700; color:#1a1a2e; }
+.col-tcg-set { display:block; font-size:11px; color:#9ca3af; margin-top:2px; }
+
+.remove-btn { position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#fee2e2; border:none; color:#e53935; font-size:10px; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.15s; }
+.col-poke-card:hover .remove-btn,
+.col-tcg-card:hover .remove-btn { opacity:1; }

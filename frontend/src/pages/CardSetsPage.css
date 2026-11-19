@@ -1,0 +1,57 @@
+.sets-page { min-height:100vh; background:#f5f6fa; }
+.sets-wrap { max-width:1000px; margin:0 auto; padding:36px 24px 60px; }
+
+.sets-header { display:flex; align-items:center; gap:16px; margin-bottom:32px; }
+.sets-icon { width:52px; height:52px; background:#e3f2fd; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px; flex-shrink:0; }
+.sets-header h2 { font-size:22px; font-weight:700; color:#1a1a2e; margin:0 0 4px; }
+.sets-header p { font-size:14px; color:#6b7280; margin:0; }
+
+/* 스켈레톤 */
+@keyframes shimmer {
+  0% { background-position:-400px 0; }
+  100% { background-position:400px 0; }
+}
+.sets-skeleton-list { display:flex; flex-direction:column; gap:10px; }
+.set-skeleton {
+  height:52px; border-radius:12px;
+  background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%);
+  background-size:800px 100%;
+  animation:shimmer 1.4s infinite;
+}
+.sets-error { text-align:center; color:#e53935; padding:40px; }
+
+/* 시리즈 아코디언 */
+.series-group { margin-bottom:10px; }
+.series-title {
+  width:100%; display:flex; align-items:center; gap:10px;
+  padding:14px 18px; background:#fff; border:1px solid #e5e7eb;
+  border-radius:12px; cursor:pointer; text-align:left;
+  font-size:15px; font-weight:700; color:#1a1a2e;
+  transition:all 0.15s;
+}
+.series-title:hover { border-color:#e53935; color:#e53935; }
+.series-title.open { border-color:#e53935; border-radius:12px 12px 0 0; color:#e53935; }
+.series-count { margin-left:auto; font-size:12px; font-weight:500; color:#9ca3af; }
+.series-arrow { font-size:11px; color:#9ca3af; }
+
+/* 세트 그리드 */
+.sets-grid {
+  display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
+  gap:1px; background:#e5e7eb;
+  border:1px solid #e5e7eb; border-top:none; border-radius:0 0 12px 12px;
+  overflow:hidden;
+}
+.set-card {
+  background:#fff; padding:14px 16px;
+  display:flex; align-items:center; gap:14px;
+  cursor:pointer; transition:background 0.15s; position:relative;
+}
+.set-card:hover { background:#fafafa; }
+.set-logo-wrap { width:90px; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+.set-logo { width:90px; height:40px; object-fit:contain; }
+.set-logo-placeholder { font-size:22px; }
+.set-card-info { flex:1; min-width:0; }
+.set-card-info h3 { font-size:13px; font-weight:700; color:#1a1a2e; margin:0 0 2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.set-card-en { display:block; font-size:11px; color:#9ca3af; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.set-card-meta { display:flex; gap:8px; font-size:11px; color:#6b7280; }
+.set-symbol { width:20px; height:20px; object-fit:contain; opacity:0.7; flex-shrink:0; }

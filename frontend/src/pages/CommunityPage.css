@@ -1,0 +1,245 @@
+.community-page {
+  min-height: 100vh;
+  background: #f5f6fa;
+}
+
+.community-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 24px 60px;
+}
+
+/* 페이지 헤더 */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.page-icon {
+  width: 52px;
+  height: 52px;
+  background: #e8f5e9;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.page-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* 툴바 */
+.post-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.search-icon {
+  font-size: 15px;
+  color: #9ca3af;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1a1a2e;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: #bbb;
+}
+
+.write-btn {
+  padding: 10px 20px;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.write-btn:hover {
+  background: #c62828;
+}
+
+/* 테이블 */
+.post-table-wrap {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.post-table thead tr {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.post-table th {
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-align: center;
+}
+
+.post-table th.col-title {
+  text-align: left;
+}
+
+.post-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.post-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.post-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.post-table td {
+  padding: 13px 14px;
+  color: #374151;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.col-num  { width: 60px; color: #9ca3af; }
+.col-title { text-align: left !important; }
+.col-author { width: 100px; }
+.col-date  { width: 100px; color: #9ca3af; font-size: 13px; }
+.col-view  { width: 90px; font-size: 13px; color: #6b7280; }
+.col-like  { width: 90px; font-size: 13px; color: #6b7280; }
+
+.post-title {
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.post-table tbody tr:hover .post-title {
+  color: #e53935;
+}
+
+.empty {
+  padding: 48px !important;
+  text-align: center !important;
+  color: #9ca3af;
+}
+
+/* 로그인 필요 안내 */
+.login-required {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.login-required-icon {
+  font-size: 48px;
+}
+
+.login-required-text {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.login-required-btn {
+  margin-top: 4px;
+  padding: 11px 28px;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.login-required-btn:hover {
+  background: #c62828;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
+}
+
+.page-btn {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.page-btn:hover {
+  border-color: #e53935;
+  color: #e53935;
+}
+
+.page-btn.active {
+  background: #e53935;
+  border-color: #e53935;
+  color: #fff;
+  font-weight: 700;
+}

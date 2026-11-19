@@ -1,0 +1,26 @@
+# ===== 비밀 값 (절대 올리지 않기) =====
+application-secret.properties
+.env
+.env.local
+*.local
+
+# ===== Backend (Spring Boot / Gradle) =====
+backend/.gradle/
+backend/build/
+backend/bin/
+backend/out/
+*.class
+
+# ===== Frontend (React / Vite) =====
+node_modules/
+dist/
+*.log
+
+# ===== IDE / OS =====
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.lnk

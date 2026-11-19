@@ -1,0 +1,146 @@
+.header {
+  background: #1a1a2e;
+  border-bottom: 1px solid #2e2e4e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  font-size: 18px;
+  font-weight: 800;
+  color: #e53935;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.nav-link {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.15s;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #f3f4f6;
+}
+
+.nav-link.active {
+  color: #f3f4f6;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: #e53935;
+  border-radius: 2px;
+}
+
+.header-user {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.login-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f3f4f6;
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.login-link:hover {
+  background: #2e2e4e;
+}
+
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-menu:hover .user-dropdown {
+  display: flex;
+}
+
+.user-dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  min-width: 140px;
+  overflow: hidden;
+}
+
+.user-name {
+  padding: 12px 16px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.logout-btn {
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #e53935;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.logout-btn:hover {
+  background: #fff5f5;
+}
